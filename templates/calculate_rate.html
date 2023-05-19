@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate Rate</title>
+</head>
+<body>
+
+<h1>Calculate rate from USD to UAH</h1>
+{% if is_calculated %}
+    <h4>The best rate from {{ bank_name }} {{ rate }}</h4>
+{% endif %}
+<form action="{% url "calculate_rate" %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Calculate</button>
+      {% if is_calculated %}
+          <div>{{ result }} UAH</div>
+      {% endif %}
+</form>
+
+</body>
+</html>

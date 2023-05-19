@@ -1,6 +1,7 @@
 import abc
 import dataclasses
 import enum
+import os
 
 import requests
 
@@ -14,7 +15,21 @@ class ExchangeCodes(enum.Enum):
 @dataclasses.dataclass(frozen=True)
 class SellBuy:
     sell: float
-    buy: float
+    buy: float | None
+
+
+def find_currency(json_data, currency_name):
+    if currency_name in json_data:
+        return json_data[currency_name]
+    else:
+        return None
+
+
+def find_first_element_by_value(lst, key, value):
+    for item in lst:
+        if key in item and item[key] == value:
+            return item
+    return None
 
 
 class ExchangeBase(abc.ABC):
@@ -57,3 +72,30 @@ class PrivatExchange(ExchangeBase):
         for rate in r.json():
             if rate["ccy"] == self.currency_a and rate["base_ccy"] == self.currency_b:
                 self.pair = SellBuy(float(rate["sale"]), float(rate["buy"]))
+
+
+class NBUExchange(ExchangeBase):
+    def get_rate(self):
+        r = requests.get("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json")
+        r.raise_for_status()
+        for rate in r.json():
+            if rate["cc"] == self.currency_a:
+                self.pair = SellBuy(float(rate["rate"]), 0)
+
+
+class VkurseExchange(ExchangeBase):
+    def get_rate(self):
+        r = requests.get("https://vkurse.dp.ua/course.json")
+        r.raise_for_status()
+        rate = find_currency(r.json(), self.currency_a)
+        if rate:
+            self.pair = SellBuy(float(rate["sale"]), float(rate["buy"]))
+
+
+class MinfinExchange(ExchangeBase):
+    def get_rate(self):
+        r = requests.get("https://minfin.com.ua/api/currency/simple/?base=UAH&list=usd,eur")
+        r.raise_for_status()
+        rate = r.json()["data"][self.currency_a]["midbank"]
+        if rate:
+            self.pair = SellBuy(float(rate["sell"]["val"]), float(rate["buy"]["val"]))

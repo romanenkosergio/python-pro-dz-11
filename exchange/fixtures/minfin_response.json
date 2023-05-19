@@ -1,0 +1,388 @@
+{
+  "data": {
+    "UAH": {
+      "midbank": {
+        "buy": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "sparkline": "1,1,1,1,1,1,1",
+          "gcharts": "/data/currency/retail/uah.rates.full.json",
+          "strend": 0
+        },
+        "sell": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "sparkline": "1,1,1,1,1,1,1",
+          "gcharts": "/data/currency/retail/uah.rates.full.json",
+          "strend": 0
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "gcharts": "/data/currency/ib/uah.ib.stock.json"
+        },
+        "sell": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "gcharts": "/data/currency/ib/uah.ib.stock.json"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "sparkline": "1,1,1,1,1,1,1",
+          "gcharts": "/data/currency/nbu/nbu.uah.stock.json",
+          "strend": 0
+        },
+        "sell": {
+          "val": "1.00",
+          "trend": "0.0000",
+          "timestamp": null,
+          "sparkline": "1,1,1,1,1,1,1",
+          "gcharts": "/data/currency/nbu/nbu.uah.stock.json",
+          "strend": 0
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": "1.00",
+          "timestamp": null,
+          "trend": "-",
+          "gcharts": "/data/currency/auction/uah.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": "1.00",
+          "timestamp": null,
+          "trend": "-",
+          "gcharts": "/data/currency/auction/uah.1000.median.daily.format.json"
+        }
+      }
+    },
+    "USD": {
+      "midbank": {
+        "buy": {
+          "val": "37.1500",
+          "trend": "-0.0500",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "37.615,37.61,37.6,37.575,37.49,37.425,37.375",
+          "gcharts": "/data/currency/retail/usd.rates.full.json",
+          "strend": -0.23999999999999
+        },
+        "sell": {
+          "val": "37.6000",
+          "trend": "-0.0500",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "37.615,37.61,37.6,37.575,37.49,37.425,37.375",
+          "gcharts": "/data/currency/retail/usd.rates.full.json",
+          "strend": -0.23999999999999
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "36.5686",
+          "trend": "0.0000",
+          "timestamp": "2023-05-19 15:15:02",
+          "gcharts": "/data/currency/ib/usd.ib.stock.json"
+        },
+        "sell": {
+          "val": "36.9343",
+          "trend": "0.0000",
+          "timestamp": "2023-05-19 15:15:02",
+          "gcharts": "/data/currency/ib/usd.ib.stock.json"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": 36.5686,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "36.5686,36.5686,36.5686,36.5686,36.5686",
+          "gcharts": "/data/currency/nbu/nbu.usd.stock.json",
+          "strend": 0
+        },
+        "sell": {
+          "val": 36.5686,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "36.5686,36.5686,36.5686,36.5686,36.5686",
+          "gcharts": "/data/currency/nbu/nbu.usd.stock.json",
+          "strend": 0
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": 37.4,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": 0,
+          "gcharts": "/data/currency/auction/usd.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": 37.5,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": 0.0087,
+          "gcharts": "/data/currency/auction/usd.1000.median.daily.format.json"
+        }
+      }
+    },
+    "EUR": {
+      "midbank": {
+        "buy": {
+          "val": "40.2500",
+          "trend": "-0.2000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "41.22,41.245,41.05,41,40.89,40.755,40.575",
+          "gcharts": "/data/currency/retail/eur.rates.full.json",
+          "strend": -0.645
+        },
+        "sell": {
+          "val": "40.9000",
+          "trend": "-0.1600",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "41.22,41.245,41.05,41,40.89,40.755,40.575",
+          "gcharts": "/data/currency/retail/eur.rates.full.json",
+          "strend": -0.645
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "39.5379",
+          "trend": "0.1071",
+          "timestamp": "2023-05-19 15:10:02",
+          "gcharts": "/data/currency/ib/eur.ib.stock.json"
+        },
+        "sell": {
+          "val": "39.9148",
+          "trend": "0.1071",
+          "timestamp": "2023-05-19 15:10:02",
+          "gcharts": "/data/currency/ib/eur.ib.stock.json"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": 39.5471,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "39.5471,39.5947,39.8104,39.7702,39.8287",
+          "gcharts": "/data/currency/nbu/nbu.eur.stock.json",
+          "strend": 0.2816
+        },
+        "sell": {
+          "val": 39.5471,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "39.5471,39.5947,39.8104,39.7702,39.8287",
+          "gcharts": "/data/currency/nbu/nbu.eur.stock.json",
+          "strend": 0.2816
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": 40.63,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": 0.015,
+          "gcharts": "/data/currency/auction/eur.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": 40.8,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": 0,
+          "gcharts": "/data/currency/auction/eur.1000.median.daily.format.json"
+        }
+      }
+    },
+    "PLN": {
+      "midbank": {
+        "buy": {
+          "val": "8.6000",
+          "trend": "-0.1000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "8.76,8.7925,8.89,8.875,8.875,8.86,8.8",
+          "gcharts": "/data/currency/retail/pln.rates.full.json",
+          "strend": 0.040000000000001
+        },
+        "sell": {
+          "val": "9.0000",
+          "trend": "-0.0200",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "8.76,8.7925,8.89,8.875,8.875,8.86,8.8",
+          "gcharts": "/data/currency/retail/pln.rates.full.json",
+          "strend": 0.040000000000001
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "-",
+          "trend": "-"
+        },
+        "sell": {
+          "val": "-",
+          "trend": "-"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": 8.7056,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "8.7056,8.7969,8.8677,8.8253,8.785",
+          "gcharts": "/data/currency/nbu/nbu.pln.stock.json",
+          "strend": 0.0794
+        },
+        "sell": {
+          "val": 8.7056,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "8.7056,8.7969,8.8677,8.8253,8.785",
+          "gcharts": "/data/currency/nbu/nbu.pln.stock.json",
+          "strend": 0.0794
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": 8.9,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/pln.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": 9.05,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/pln.1000.median.daily.format.json"
+        }
+      }
+    },
+    "GBP": {
+      "midbank": {
+        "buy": {
+          "val": "45.0000",
+          "trend": "0.0000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "46.175,46.2,46.1,46.15,46.255,46,45.95",
+          "gcharts": "/data/currency/retail/gbp.rates.full.json",
+          "strend": -0.22499999999999
+        },
+        "sell": {
+          "val": "46.9000",
+          "trend": "-0.1000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "46.175,46.2,46.1,46.15,46.255,46,45.95",
+          "gcharts": "/data/currency/retail/gbp.rates.full.json",
+          "strend": -0.22499999999999
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "-",
+          "trend": "-"
+        },
+        "sell": {
+          "val": "-",
+          "trend": "-"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": 45.5115,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "45.5115,45.5718,45.7747,45.7455,45.7821",
+          "gcharts": "/data/currency/nbu/nbu.gbp.stock.json",
+          "strend": 0.2706
+        },
+        "sell": {
+          "val": 45.5115,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "45.5115,45.5718,45.7747,45.7455,45.7821",
+          "gcharts": "/data/currency/nbu/nbu.gbp.stock.json",
+          "strend": 0.2706
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": 46,
+          "timestamp": "2023-05-19 14:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/gbp.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": 46.8,
+          "timestamp": "2023-05-19 14:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/gbp.1000.median.daily.format.json"
+        }
+      }
+    },
+    "CHF": {
+      "midbank": {
+        "buy": {
+          "val": "40.0000",
+          "trend": "0.0000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "41.2,41.25,41.175,41.25,41.65,40.95,40.95",
+          "gcharts": "/data/currency/retail/chf.rates.full.json",
+          "strend": -0.25
+        },
+        "sell": {
+          "val": "41.9000",
+          "trend": "0.0000",
+          "timestamp": "2023-05-19 00:00:00",
+          "sparkline": "41.2,41.25,41.175,41.25,41.65,40.95,40.95",
+          "gcharts": "/data/currency/retail/chf.rates.full.json",
+          "strend": -0.25
+        }
+      },
+      "interbank": {
+        "buy": {
+          "val": "-",
+          "trend": "-"
+        },
+        "sell": {
+          "val": "-",
+          "trend": "-"
+        }
+      },
+      "nbu": {
+        "buy": {
+          "val": 40.625,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "40.625,40.6476,40.9091,40.8063,40.8793",
+          "gcharts": "/data/currency/nbu/nbu.chf.stock.json",
+          "strend": 0.2543
+        },
+        "sell": {
+          "val": 40.625,
+          "trend": 0,
+          "timestamp": "2023-05-19 14:01:35",
+          "sparkline": "40.625,40.6476,40.9091,40.8063,40.8793",
+          "gcharts": "/data/currency/nbu/nbu.chf.stock.json",
+          "strend": 0.2543
+        }
+      },
+      "auction": {
+        "buy": {
+          "val": 41.2,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/chf.1000.median.daily.format.json"
+        },
+        "sell": {
+          "val": 42,
+          "timestamp": "2023-05-19 15:00:00",
+          "trend": "-",
+          "gcharts": "/data/currency/auction/chf.1000.median.daily.format.json"
+        }
+      }
+    }
+  }
+}
